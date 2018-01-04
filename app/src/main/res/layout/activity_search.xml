@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shlomisasportas.SearchActivity">
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstName"
+        android:layout_alignStart="@+id/firstName"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/deathDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lastName"
+        android:layout_alignRight="@+id/lastName"
+        android:layout_below="@+id/lastName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:hint="Date of death" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/deathDate"
+        android:layout_alignRight="@+id/deathDate"
+        android:layout_below="@+id/deathDate"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="false"
+        android:hint="Date of birth" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/age"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dob"
+        android:layout_alignStart="@+id/dob"
+        android:layout_below="@+id/dob"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/deathLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/age"
+        android:layout_alignRight="@+id/age"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:hint="Death Location" />
+
+    <EditText
+        android:id="@+id/momName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/deathLocation"
+        android:layout_alignRight="@+id/deathLocation"
+        android:layout_below="@+id/deathLocation"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:hint="Mom Name" />
+
+    <EditText
+        android:id="@+id/dadName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/momName"
+        android:layout_alignStart="@+id/momName"
+        android:layout_below="@+id/momName"
+        android:ems="10"
+        android:visibility="gone"
+        android:inputType="textPersonName"
+        android:hint="Dad's Name" />
+
+    <ImageView
+        android:id="@+id/expand"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+</RelativeLayout>
